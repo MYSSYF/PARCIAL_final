@@ -52,27 +52,8 @@ public class Figura implements Runnable {
 	}
 
 	public void mover() {
-
-	ran=(int) app.random(1, 4);
-
-		
-		switch (ran) {
-		case 4:
-			posX += 4;
-			break;
-		case 1:
-			posX -= 4;
-			break;
-		case 2:
-			posY += 4;
-			break;
-		case 3:
-			posY -= 4;
-			break;
-
-		default:
-			break;
-		}
+	    posX += app.random(-2, 2);
+	    posY += app.random(-2, 2);
 		
 		if(posX>900) {
 			posX=-100;
